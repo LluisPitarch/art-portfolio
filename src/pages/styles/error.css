@@ -1,0 +1,16 @@
+.content-error{
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error{
+    text-align: center;
+    width: 500px
+}
+
+.no-radius{
+    border-radius: 0px;
+}
