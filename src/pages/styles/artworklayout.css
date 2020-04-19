@@ -27,31 +27,9 @@
     width: 50%;
 }
 
-.nav-artwork{
+.nav-artwork-container{
     width: 10%;
 
-}
-
-.nav-artwork ul{
-    text-align: end;
-    list-style: none;
-    position:fixed;
-    transform-origin: left top;
-    transform:rotate(-90deg) translateX(-100%);
-    width: 100vw;
-}
-
-.nav-artwork a{
-    color: black;
-    font-size: 20px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px 50px;
-    font-weight: lighter;
-}
-
-.last-link-artwork{
-    margin-right: 20%
 }
 
 .content-text-artwork{
@@ -78,13 +56,12 @@
 }
 
 
-
 .container-artwork-title{
     width: 70%;
     display: flex;
     align-items: flex-end;
     bottom: 0;
-
+    height: 190px;
 }
 
 .artwork-data-specifications{
@@ -98,7 +75,7 @@
 
 .artwork-title{
 
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 900;
     
 }

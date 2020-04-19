@@ -1,0 +1,44 @@
+.nav-artwork-ul{
+    height: 100vh;
+    flex-flow: column wrap;
+    display: flex;
+    justify-content:flex-end;
+    overflow: auto;
+    overflow-x: scroll; 
+}
+
+
+.rotated-nav{
+    width: 3000px;
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    margin-left: 50px;
+}
+
+
+
+.nav-artwork-ul a{
+    text-decoration: none;
+    color: black !important;
+    margin: 0px 40px;
+    text-transform: uppercase;
+}
+
+.nav-artwork-ul a:hover{
+text-decoration: none !important;
+color: black;
+
+}
+
+.scrolling-div-nav{
+    animation: move 25s infinite alternate-reverse;
+}
+
+@keyframes move{
+    form{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-1100px);
+    }
+}

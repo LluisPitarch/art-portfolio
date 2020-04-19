@@ -1,24 +1,28 @@
 import React from 'react';
-import {Link } from 'react-router-dom'
 
 import './styles/artworklayout.css'
 import './styles/home.css'
 import Typed from 'react-typed'
 import ArtworkSlider from '../components/ArtworkSlider';
 import Header from '../components/Header'
+import ArtworkNav from '../components/ArtworkNav'
+import Loading from '../components/Loading';
 
 import Data from '../data/data'
 
 class ArtworkLayout extends React.Component {
     state = {
-        loading: 'false',
-        error: 'null',
-        artworks: ''
+        loading: true,
+        error: null,
+        artworks: '',
+        nonActiveArtworks: [],
      }
-    
+
     componentDidMount(){
-        this.chargeArtworkData()
+        this.chargeArtworkData();
+        this.getNonActiveArtworks();
     }
+
 
     chargeArtworkData = async (e) => {
         this.setState( {loading: true, error: null})
@@ -29,7 +33,22 @@ class ArtworkLayout extends React.Component {
                 // Getting data of the artworks that matches with the hash id from the collection
                 )
             
-            this.setState( {loading: false, artworks: artworkData})
+            await this.setState({ artworks: artworkData })
+            this.setState( {loading: false})
+        } catch (error) {
+            this.setState( {loading: false, error: error})
+        }
+    }
+
+    getNonActiveArtworks = async (e) => {
+        this.setState( {loading: true, error: null})
+        
+        try {
+            const artworkCollection = await Data.artworks;
+            const id = this.props.match.params.artworksId
+            const nonActiveArtworksList = await artworkCollection.filter( (artworkCollection) => artworkCollection.id !== id)
+            
+            this.setState( {loading: false, nonActiveArtworks: nonActiveArtworksList})
 
         } catch (error) {
             this.setState( {loading: false, error: error})
@@ -37,11 +56,16 @@ class ArtworkLayout extends React.Component {
     }
 
 
-    render() { 
+  render() { 
 
         const title = this.state.artworks.title
+        const navArtworks = this.state.nonActiveArtworks
+
+        if(this.state.loading === true){
+            return (<Loading/>)
+        } 
         
-        return (   
+            return (   
                 <div className="container-artwork">
                     <div className="content-img-artwork">
                         <Header/>
@@ -62,10 +86,7 @@ class ArtworkLayout extends React.Component {
                                         strings={[
                                             `${title}`
                                         ]}
-                                        typeSpeed={60}
-                                        backSpeed={50}
-                                        backDelay={10000}
-                                        loop
+                                        typeSpeed={80}
                                     />
                                     </h2>
                                 </div>
@@ -84,17 +105,8 @@ class ArtworkLayout extends React.Component {
                                 <p>{this.state.artworks.longDescription}</p>
                             </div>
                         </div>
-                        <div className="nav-artwork">
-                            <ul>
-                                <li>
-                                    <Link>Artwork 1</Link>
-                                    <Link>Artwork 2</Link>
-                                    <Link>Artwork 3</Link>
-                                    <Link>Artwork 4</Link>
-                                    <Link>Artwork 5</Link>
-                                    <Link className="last-link-artwork" to="/artwork">Artwork 6</Link>
-                                </li>
-                            </ul>
+                        <div className="nav-artwork-container">
+                            <ArtworkNav projects={navArtworks} update={this.chargeArtworkData}/>
                         </div>
 
                     </div>
@@ -102,7 +114,7 @@ class ArtworkLayout extends React.Component {
                 
          );
 
-         
+        
     }
 }
  

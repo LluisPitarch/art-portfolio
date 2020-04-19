@@ -21,7 +21,7 @@ class NotFound extends React.Component {
                         <li>
                             <Link>Contact</Link>
                             <Link>Bio</Link>
-                            <Link className="last-link">Artwork</Link>
+                            <Link className="last-link" to="/artworks-list">Projects</Link>
                         </li>
                     </ul>
                 </div>
