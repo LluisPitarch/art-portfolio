@@ -7,9 +7,9 @@ class MainNav extends React.Component {
 
     render() { 
         return (  
-            <div className={`nav-home ${this.props.gray}`}>
+            <div className={`nav-home`}>
                     <ul>
-                        <li>
+                        <li className={`${this.props.gray}`}>
                             <Link to="/contact">Contact</Link>
                             <Link to="/bio">Bio</Link>
                             <Link className="last-link" to="/artworks-list">Projects</Link>
