@@ -1,3 +1,21 @@
+.logo-artworks-list{
+    margin: 40px 0px 0px 0px;
+    color: black;
+}
+.logo-artworks-list h1{
+    color: black;
+}
+
+.light-logo-list{
+    font-weight: 100;
+}
+
+.logo-nav-list:hover{
+    text-decoration: none !important;
+    color: black;
+  
+}
+/*  ----------------------------- Header --------------------- */
 
 .list-artworks-container{
     display: flex;
@@ -6,13 +24,18 @@
     flex-wrap: wrap;
 }
 
+.flex-container-list{
+    display: flex;
+    flex-direction: row;
+}
+
 .artwork-component{
     width: 33%;
 }
 
 .projects-container{
-    width: 100%;
-    padding: 100px 5%;
+    width: 95%;
+    padding: 0px 5%;
 }
 
 .projects-title{
@@ -21,4 +44,51 @@
     letter-spacing: 5px;
     text-align: right;
     margin-bottom: 100px;
+}
+
+
+/* ------------------------------- SIDEBAR NAV ------------------ */
+
+
+.nav-projects-list{
+    width: 5%;
+    background: #e6e6e6;
+}
+
+/* .nav-projects-list a{
+    color: black;
+    text-decoration: none;
+}
+
+@keyframes hover-nav {
+    from{
+        letter-spacing: 0;
+    }
+    
+    to{
+        letter-spacing: 2px;
+    }
+}
+
+.nav-projects-list a:hover{
+    color: black;
+    text-decoration: none;
+    animation: hover-nav 300ms ease-in-out ;
+    animation-fill-mode: both;
+    
+} */
+
+
+
+.nav-projects-list a{
+    color: black;
+    text-decoration: none;
+    transition: all .5s ease;
+
+  }
+
+.nav-projects-list a:hover{
+    color: #000;
+    transition: all .5s ease;
+    text-decoration: line-through;
 }

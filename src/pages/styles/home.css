@@ -16,28 +16,4 @@
 }
 .nav-home{
     width: 5%;
-
 }
-
-.nav-home ul{
-    text-align: end;
-    list-style: none;
-    position:fixed;
-    transform-origin: left top;
-    transform:rotate(-90deg) translateX(-100%);
-    width: 100vw;
-}
-
-.nav-home a{
-    color: black;
-    font-size: 30px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px 50px
-}
-
-.nav-home .last-link{
-    margin-right: 20%
-}
-
-

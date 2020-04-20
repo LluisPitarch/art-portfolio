@@ -1,0 +1,60 @@
+.row-r{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 60px;
+}
+
+.row-l{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.img-bio{  
+    width: 80%;
+}
+
+.img-bio img{
+    width: 100%;
+}
+
+.title-bio{
+    margin-left: -150px;
+    font-size: 75px;
+}
+
+.justify-end{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav-projects-list{
+    height: 100vh;
+    width: 5%;
+    background: #e6e6e6;
+}
+
+.d-flex-bio{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.width-100{
+    width: 95%;
+}
+
+.bio-data{
+    width: 300px;
+    padding: 30px;
+    background: #e6e6e6;
+    height: auto;
+    align-self: flex-start;
+}
+
+.bio-text{
+    margin-top: 100px;
+}

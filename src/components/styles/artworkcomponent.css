@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    margin: 75px 10px;
 }
 
 
@@ -18,13 +19,21 @@
 .container_artworkComponent_title h3{
     letter-spacing: 1px;
     font-size: 35px;
+    transition: all .5s ease;
+}
+.container_artworkComponent_title h3:hover{
+    transition: all .5s ease;
+    background: black;
+    color: white;
 }
 
 
 .container_artworkComponent img{
     width: 80%;
-    margin: 10% 10%;
+    margin: 11% 11%;
+    
 }
+
 
 .container_artworkComponent .specific-list{
     width:40%;

@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom'
 
 import './styles/error.css'
+import MainNav from '../components/MainNav';
 
 class NotFound extends React.Component {
     state = {  }
@@ -16,15 +17,7 @@ class NotFound extends React.Component {
                         <Link to="/" className="btn btn-outline-secondary no-radius"> Back Home </Link>
                     </div>
                 </div>
-                <div className="nav-home">
-                    <ul>
-                        <li>
-                            <Link>Contact</Link>
-                            <Link>Bio</Link>
-                            <Link className="last-link" to="/artworks-list">Projects</Link>
-                        </li>
-                    </ul>
-                </div>
+                <MainNav gray="gray"/>
             </div>
         
             

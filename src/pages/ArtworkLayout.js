@@ -47,7 +47,7 @@ class ArtworkLayout extends React.Component {
             const artworkCollection = await Data.artworks;
             const id = this.props.match.params.artworksId
             const nonActiveArtworksList = await artworkCollection.filter( (artworkCollection) => artworkCollection.id !== id)
-            
+
             this.setState( {loading: false, nonActiveArtworks: nonActiveArtworksList})
 
         } catch (error) {
