@@ -1,4 +1,8 @@
 
+.logo{
+    align-items: baseline;
+}
+
 .logo-nav{
     text-decoration: none;
     color: black !important;
@@ -14,4 +18,12 @@
     text-decoration: none !important;
     color: black;
   
+}
+
+.bm-burger-button{
+    position: fixed;
+    width: 30px;
+    height: 25px;
+    left: 83%;
+    top: 50px;
 }

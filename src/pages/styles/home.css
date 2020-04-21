@@ -17,3 +17,15 @@
 .nav-home{
     width: 5%;
 }
+
+@media screen and (max-width: 600px){
+    .nav-home{
+        width: 0%;
+    }
+    .content-home{
+        width: 100%;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url( ../../img/responsive-home-bg.jpg);
+    }
+}
