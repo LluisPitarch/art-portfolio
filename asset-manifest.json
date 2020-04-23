@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/art-portfolio/static/css/main.a68bf7a3.chunk.css",
-    "main.js": "/art-portfolio/static/js/main.8409e99b.chunk.js",
-    "main.js.map": "/art-portfolio/static/js/main.8409e99b.chunk.js.map",
+    "main.js": "/art-portfolio/static/js/main.1c33e562.chunk.js",
+    "main.js.map": "/art-portfolio/static/js/main.1c33e562.chunk.js.map",
     "runtime-main.js": "/art-portfolio/static/js/runtime-main.d7fb168d.js",
     "runtime-main.js.map": "/art-portfolio/static/js/runtime-main.d7fb168d.js.map",
     "static/css/2.89f067aa.chunk.css": "/art-portfolio/static/css/2.89f067aa.chunk.css",
-    "static/js/2.b5636873.chunk.js": "/art-portfolio/static/js/2.b5636873.chunk.js",
-    "static/js/2.b5636873.chunk.js.map": "/art-portfolio/static/js/2.b5636873.chunk.js.map",
+    "static/js/2.601be510.chunk.js": "/art-portfolio/static/js/2.601be510.chunk.js",
+    "static/js/2.601be510.chunk.js.map": "/art-portfolio/static/js/2.601be510.chunk.js.map",
     "index.html": "/art-portfolio/index.html",
-    "precache-manifest.6d773a2be699a972ad0788df7cdf8ed0.js": "/art-portfolio/precache-manifest.6d773a2be699a972ad0788df7cdf8ed0.js",
+    "precache-manifest.417305177392aeae8a1e452e6b859ac3.js": "/art-portfolio/precache-manifest.417305177392aeae8a1e452e6b859ac3.js",
     "service-worker.js": "/art-portfolio/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/art-portfolio/static/css/2.89f067aa.chunk.css.map",
     "static/css/main.a68bf7a3.chunk.css.map": "/art-portfolio/static/css/main.a68bf7a3.chunk.css.map",
-    "static/js/2.b5636873.chunk.js.LICENSE.txt": "/art-portfolio/static/js/2.b5636873.chunk.js.LICENSE.txt",
+    "static/js/2.601be510.chunk.js.LICENSE.txt": "/art-portfolio/static/js/2.601be510.chunk.js.LICENSE.txt",
     "static/media/artwork-1.jpg": "/art-portfolio/static/media/artwork-1.54084033.jpg",
     "static/media/artwork-2.jpg": "/art-portfolio/static/media/artwork-2.8f4662ad.jpg",
     "static/media/artwork-3.jpg": "/art-portfolio/static/media/artwork-3.052969a5.jpg",
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.d7fb168d.js",
     "static/css/2.89f067aa.chunk.css",
-    "static/js/2.b5636873.chunk.js",
+    "static/js/2.601be510.chunk.js",
     "static/css/main.a68bf7a3.chunk.css",
-    "static/js/main.8409e99b.chunk.js"
+    "static/js/main.1c33e562.chunk.js"
   ]
 }
