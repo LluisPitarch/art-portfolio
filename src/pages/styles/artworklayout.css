@@ -36,6 +36,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: fit-content;
 }
 
 .artwork-info-container{
@@ -67,7 +68,8 @@
 .artwork-data-specifications{
     width: 30%;
     font-size: 15px;
-    background: rgba(240, 240, 240, 1);
+    background: black;
+    color: white;
     padding: 20px
 
 }
@@ -104,4 +106,83 @@
 .carousel-control-prev{
     display: flex !important;
     align-items: center;
+}
+
+/* Reponsive Adjusts */
+
+@media screen and (max-width: 1000px){
+    .container-artwork{
+        padding-top: 76px;
+        position: relative;
+    }
+    .nav-artwork-container{
+        display: none;
+    }
+    .content-img-artwork{
+        height: auto;
+    }
+    .content-img-artwork{
+        width: 65%;
+    }
+    .content-text-artwork{
+        width: 35%;
+        
+    }
+
+    .container-artwork-title{
+        width: 35%;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        font-size: 30px;
+    }
+    .artwork-data-specifications{
+        width: 35%;
+        position: absolute;
+        bottom: -5%;
+        right: 10%;
+
+    }
+    .artwork-title{
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    .content-img-artwork{
+        width: 75%;
+    }
+    .content-text-artwork{
+        width: 25%;
+        
+    }
+   
+    .container-artwork-title{
+        width: 50%;
+        position: absolute;
+        top: 25%;
+        right: 7%;
+        font-size: 27px;
+    }
+    .artwork-data-specifications{
+        width: 50%;
+        position: absolute;
+        bottom: -5%;
+        right: 7%;
+        z-index: 1;
+        font-size: 15px;
+
+    }
+    .artwork-title{
+        font-size: 33px;
+    }
+    .artwork-carousel{
+        z-index: 0;
+    }
+    .carousel-indicators{
+        display: none !important;
+    }
+
 }

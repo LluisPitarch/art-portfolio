@@ -7,7 +7,7 @@ class MainNav extends React.Component {
 
     render() { 
         return (  
-            <div className={`nav-home`}>
+            <div className="nav-home only-desktop">
                     <ul>
                         <li className={`${this.props.gray}`}>
                             <Link to="/contact">Contact</Link>

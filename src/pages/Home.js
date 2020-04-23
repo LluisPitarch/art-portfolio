@@ -11,10 +11,10 @@ class Home extends React.Component {
         return ( 
         
             <div className="container-home">
-                <div className="content-home">
+                <div className="content-home responsive-fw">
                     <Header/>
                 </div>
-                <MainNav/>
+                <MainNav />
             </div>
             
 

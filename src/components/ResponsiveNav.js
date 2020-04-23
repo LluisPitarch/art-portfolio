@@ -14,8 +14,8 @@ class MenuRes extends React.Component {
     // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     return (
       <Menu right="true" customBurgerIcon={ <img src={burgerMenu} /> }>
-        <a id="home" className="menu-item" href="/">Projects</a>
-        <a id="about" className="menu-item" href="/bio">Bio</a>
+        <a id="projects" className="menu-item" href="/artworks-list">Projects</a>
+        <a id="bio" className="menu-item" href="/bio">Bio</a>
         <a id="contact" className="menu-item" href="/contact">Contact</a>
       </Menu>
     );

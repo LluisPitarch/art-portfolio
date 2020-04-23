@@ -1,21 +1,4 @@
-.logo-artworks-list{
-    margin: 40px 0px 0px 0px;
-    color: black;
-}
-.logo-artworks-list h1{
-    color: black;
-}
 
-.light-logo-list{
-    font-weight: 100;
-}
-
-.logo-nav-list:hover{
-    text-decoration: none !important;
-    color: black;
-  
-}
-/*  ----------------------------- Header --------------------- */
 
 .list-artworks-container{
     display: flex;
@@ -39,13 +22,44 @@
 }
 
 .projects-title{
-    font-size: 130px;
+    font-size: 100px;
     font-weight: 900;
     letter-spacing: 5px;
     text-align: right;
     margin-bottom: 100px;
+    margin-top: 150px;
 }
 
+.only-responsive{
+    display: none
+}
+
+/* ----------------------------Responsive------------------------ */
+
+@media screen and (max-width: 1000px){
+    .artwork-component{
+        width: 50%;
+    }
+    .projects-title{
+        margin-bottom: 20px;
+    }
+    
+    .only-responsive{
+        display: block
+    }
+}
+
+@media screen and (max-width: 650px){
+    .artwork-component{
+        width: 100%;
+    }
+    .projects-title{
+        font-size: 80px;
+        letter-spacing: 1px;
+        margin-bottom: 0px;
+        
+    }
+}
 
 /* ------------------------------- SIDEBAR NAV ------------------ */
 

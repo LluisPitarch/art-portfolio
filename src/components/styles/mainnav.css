@@ -5,11 +5,11 @@
     transform-origin: left top;
     transform:rotate(-90deg) translateX(-100%);
     width: 100vw;
-    
 }
 
 .gray{
     background: #e6e6e6;
+    height: 200px;
 }
 
 .nav-home a{
@@ -29,4 +29,21 @@
     color: #000;
     transition: all .5s ease;
     text-decoration: line-through;
+}
+
+.bm-burger-button{
+    outline: none;
+}
+
+.bm-burger-button{
+    outline: none;
+}
+
+/* Responsive Menu change */
+
+@media screen and (max-width: 1000px){
+    .only-desktop{
+     display: none;
+    }
+    
 }

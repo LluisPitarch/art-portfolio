@@ -66,23 +66,40 @@ class ArtworkLayout extends React.Component {
         } 
         
             return (   
+                <React.Fragment>
+                <Header gray="gray-nav"/>
+
                 <div className="container-artwork">
                     <div className="content-img-artwork">
-                        <Header/>
                         <div className="artwork-carousel">
                             <ArtworkSlider
                                 imgOne={this.state.artworks.img1}
                                 imgTwo={this.state.artworks.img2}
                                 imgThree={this.state.artworks.img3}
                             />
+                            <div className="container-artwork-title only-responsive">
+                                    <h2 className="artwork-title">    <Typed
+                                        strings={[
+                                            `${title}`
+                                        ]}
+                                        typeSpeed={80}
+                                    />
+                                    </h2>
+                            </div>
+                            <div className="artwork-data-specifications only-responsive">
+                                    <span>Dimensions: {this.state.artworks.dimensions}</span><br/>
+                                    <span>Year: {this.state.artworks.year}</span><br/>
+                                    <span>Technique: {this.state.artworks.technique}</span><br/>
+                            
+                            </div>
                         </div>
                     </div>
                     
                     <div className="content-text-artwork">
                         <div className="artwork-info-container">
                             <div className="artwork-data">
-                                <div className="container-artwork-title">
-                                    <h2 className="artwork-title">    <Typed
+                                <div className="container-artwork-title only-desktop">
+                                    <h2 className="artwork-title only-desktop">    <Typed
                                         strings={[
                                             `${title}`
                                         ]}
@@ -91,15 +108,15 @@ class ArtworkLayout extends React.Component {
                                     </h2>
                                 </div>
                                 
-                                    <div className="artwork-data-specifications">
-                                        <span>Dimensions: {this.state.artworks.dimensions}</span><br/>
-                                        <span>Year: {this.state.artworks.year}</span><br/>
-                                        <span>Technique: {this.state.artworks.technique}</span><br/>
-                                        <span className="baseline">Materials: {this.state.artworks.materials}</span>
-                                    </div>
+                                <div className="artwork-data-specifications only-desktop">
+                                    <span>Dimensions: {this.state.artworks.dimensions}</span><br/>
+                                    <span>Year: {this.state.artworks.year}</span><br/>
+                                    <span>Technique: {this.state.artworks.technique}</span><br/>
+                                    <span className="baseline">Materials: {this.state.artworks.materials}</span>
+                                </div>
                                 
                             </div>
-                            <div className="artwork-description">
+                            <div className="artwork-description only-desktop">
                                 <p>{this.state.artworks.shortDescription}</p>
 
                                 <p>{this.state.artworks.longDescription}</p>
@@ -108,9 +125,24 @@ class ArtworkLayout extends React.Component {
                         <div className="nav-artwork-container">
                             <ArtworkNav projects={navArtworks} update={this.chargeArtworkData}/>
                         </div>
+                        {/* <div className="nav-artwork-container-responsive">
+                            <ArtworkNav projects={navArtworks} update={this.chargeArtworkData}/>
+                        </div> */}
 
                     </div>
                 </div>
+                    <div className="only-responsive">
+                        <div className="artwork-description">
+                            <p>{this.state.artworks.shortDescription}</p>
+
+                            <p>{this.state.artworks.longDescription}</p>
+                        </div>
+
+                            {/* <div className="nav-artwork-container-responsive">
+                                <ArtworkNav projects={navArtworks} update={this.chargeArtworkData}/>
+                            </div> */}
+                    </div>
+                </React.Fragment>
                 
          );
 

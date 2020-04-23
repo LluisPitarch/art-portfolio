@@ -1,3 +1,9 @@
+.header-container{
+    position: absolute;
+    z-index: 100000;
+}
+
+
 
 .logo{
     align-items: baseline;
@@ -20,10 +26,27 @@
   
 }
 
+
+/* Responsive menu change */
+
 .bm-burger-button{
-    position: fixed;
-    width: 30px;
-    height: 25px;
-    left: 83%;
-    top: 50px;
+    display: none;
+   }
+   
+
+@media screen and (max-width: 1000px){
+    .bm-burger-button{
+     display: block !important;
+    }
+    .header-container{
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+    .gray-nav{ 
+        background: #e6e6e6;
+    }
+    .logo-nav{
+        margin: 20px 0px 0px 20px;
+    }
 }

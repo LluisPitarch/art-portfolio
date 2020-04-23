@@ -1,5 +1,7 @@
 .container-contact{
-    width: 95%
+    width: 95%;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .contact-title{
@@ -10,7 +12,6 @@
 
 .hr{
     border: 4px solid black;
-
     margin-top: 20vh;
 }
 
@@ -31,3 +32,26 @@
     font-weight: 300;
 }
 
+/* Responsive adjust */
+
+@media screen and (max-width: 1000px){
+    .container-contact{
+        flex-direction: column-reverse;
+    }
+    .contact-container-l{
+        width: 100%
+    }
+    .contact-container-r{
+        width: 100%;}
+    .contact-title{
+        text-align: right;
+        margin-right: 15%;
+        font-size: 70px;
+    }
+    .text-container{
+        width: 80%;
+        margin: 40px auto;
+        font-size: 20px;
+        font-weight: 300;
+    }
+}

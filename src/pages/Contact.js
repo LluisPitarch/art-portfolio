@@ -9,13 +9,13 @@ class Contact extends React.Component {
     render() { 
         return ( 
             <React.Fragment>
+                <Header gray="gray-nav"></Header>
                 <div className="container-flex d-flex">
 
-                    <div className="container-contact d-flex">
+                    <div className="container-contact d-flex responsive-fw">
                         <div className="contact-container-l">
-                            <Header/>
                             <div className="contact-text">
-                                <hr className="hr"/>
+                                <hr className="hr only-desktop"/>
                                 <p className="text-container">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, reprehenderit! Maiores corrupti itaque amet fugiat laudantium magnam, reprehenderit eaque modi! <br/><br/>
                                     <span className="font-weight-bold">contact@mireiaavila.com</span>
@@ -29,9 +29,9 @@ class Contact extends React.Component {
                             </h1>
                         </div>
                     </div>
-                    <div className="nav-projects-list nav-home">
+                    
                     <MainNav gray="gray"/>
-                    </div>
+                    
                 </div>
             </React.Fragment>
          );

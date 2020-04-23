@@ -1,15 +1,18 @@
 /* Position and sizing of burger button */
-.bm-burger-button {
-    position: fixed;
-    width: 36px;
-    height: 30px;
-    left: 36px;
-    top: 36px;
-  }
-  
+
+
+.bm-burger-button{
+  position: fixed;
+  width: 30px;
+  height: 25px;
+  right: 30px;
+  top: 30px;
+  outline: none;
+}
+
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
-    background: #373a47;
+    background: rgba(0, 0, 0, 0)
   }
   
   /* Color/shape of burger icon bars on hover*/
@@ -19,8 +22,10 @@
   
   /* Position and sizing of clickable cross button */
   .bm-cross-button {
-    height: 24px;
-    width: 24px;
+    height: 35px;
+    width: 35px;
+    outline: none;
+  
   }
   
   /* Color/shape of close button cross */
@@ -64,3 +69,21 @@
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
   }
+
+  /* Personalizados */
+
+.menu-item{
+  color: black;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 50px;
+    transition: all .5s ease;
+    outline: none;
+}
+
+.menu-item:hover{
+  color: #000;
+    transition: all .5s ease;
+    text-decoration: line-through;
+}

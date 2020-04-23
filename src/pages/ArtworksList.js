@@ -8,6 +8,7 @@ import ArtworkComponent from '../components/ArtworkComponent'
 import Data from '../data/data'
 
 import './styles/artworklist.css'
+import Header from '../components/Header';
 
 class ArtworksList extends React.Component {
     state = {
@@ -21,20 +22,25 @@ class ArtworksList extends React.Component {
             <React.Fragment>
 
             
+            <Header gray="gray-nav"></Header>
             <div className="flex-container-list">
 
-                <div className="projects-container">
+                <div className="projects-container responsive-fw">
 
-                    <div className="logo-artworks-list">
-                        <Link className="logo-nav-list" to="/">
-                            <h1><span className="light-logo-list"> Mireia </span>  Ávila</h1>
-                        </Link>
-                    </div>
                     
-                    <h1 className="projects-title">
+                    <h1 className="projects-title only-desktop">
                     <Typed
                         strings={[
-                            '_Projects'
+                            '_PROJECTS'
+                        ]}
+                        typeSpeed={80}
+                    />
+                    </h1>
+
+                    <h1 className="projects-title only-responsive">
+                    <Typed
+                        strings={[
+                            '_PRO <br>JECTS'
                         ]}
                         typeSpeed={80}
                     />
@@ -59,9 +65,9 @@ class ArtworksList extends React.Component {
                     </ul>
                 </div>
 
-                <div className="nav-projects-list nav-home">
-                    <MainNav gray="gray"/>
-                </div>
+                
+                <MainNav gray="gray"/>
+                
             </div>
 
             </React.Fragment>
