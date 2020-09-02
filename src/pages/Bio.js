@@ -17,11 +17,7 @@ class Bio extends React.Component {
             <div className="d-flex flex-wrap">
               <div className="row-l">
                 <div className="img-bio">
-                  <img
-                    className="img-bio"
-                    src={BioImg}
-                    alt="Mireia Ávila Bio image"
-                  />
+                  <img className="img-bio" src={BioImg} alt="Artist img bio" />
                 </div>
                 <h1 className="title-bio">_Bio</h1>
                 <div className="only-responsive-bio">
